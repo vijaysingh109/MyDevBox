@@ -1,5 +1,6 @@
 @RestResource(urlMapping='/Accounts/*/contacts')
 global class AccountManager {
+	// Testing GIT Commit.
     @HttpGet
     global static Account getAccount() {
         RestRequest req = RestContext.request;
