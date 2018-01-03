@@ -1,0 +1,60 @@
+<apex:page standardController="Account">
+
+<apex:sectionHeader title="JQuery Testing"/>
+
+<apex:includeScript value="{!$Resource.Jquery}"/>   
+<html>
+<head>
+<title>Document</title>
+
+<script type="text/javascript">
+    $("document").ready(function() {
+        
+        //$(".btn").click(function(){
+            $(".btn").hide();
+        //});
+        
+        //$("ul").css("border", "3px solid red");
+        //$("p[id=para1]").css("border", "3px solid red");
+        //$("p[id^=para]").css("border", "3px solid red");
+        //$("p[id^=para][lang*=en-]").css("border", "3px solid red");
+    });
+</script>
+<style type="text/css">
+.a { color: Navy; }
+.b { color: Maroon; }
+</style>
+</head>
+<body>
+    <ul id="list1">
+        <li class="a">item 1</li>
+        <li class="a">item 2</li>
+        <li class="b">item 3</li>
+        <li class="b">item 4</li>
+    </ul>
+<p class="a">This is paragraph 1</p>
+<p id="para1">This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p id="para4" lang="en-us">This is paragraph 4</p>
+
+<ul id="list2">
+        <li class="a">Payment 1</li>
+        <li class="a">Payment 2</li>
+        <li class="b">Payment 3</li>
+        <li class="b">Payment 4</li>
+    </ul>
+    
+    <apex:pageBlock id="pageBlock">
+        <apex:pageBlockSection >
+            <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!Account.accountNumber}"/>
+            <apex:outputField value="{!Account.website}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</body>
+
+<input type="button" id="btn" value="Hide Payment Window"/>
+
+</html>
+
+</apex:page>

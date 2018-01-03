@@ -1,0 +1,5 @@
+<apex:page controller="sameController" docType="HTML">
+{!datevalue}
+<br/>
+Another Page value
+</apex:page>

@@ -1,0 +1,18 @@
+<apex:page standardController="Opportunity" extensions="extCon"> <!--contentType="application/vnd.msword.doc"-->
+{!id} 
+
+{!opp.id}
+
+<br/><br/><br/>
+
+<apex:form >
+<!--
+    <apex:outputField value="{!Opp.EL__c}"/>  -->  
+    
+
+    <apex:outputText value="{!htmlvalue}" escape="false"></apex:outputText>
+    
+
+</apex:form>
+
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page controller="generateAuthCode">
+  
+  <apex:form >
+      {!count}
+      {!code}
+      <apex:commandButton value="Call me" action="{!geneAuthCode}"/>
+  </apex:form>
+ {!$Api.Session_ID}
+</apex:page>

@@ -1,0 +1,24 @@
+<apex:page controller="remoteController">
+
+<html lang="en">
+<head>
+  <title>progressbar demo</title>
+  <apex:includeScript value="{!URLFOR($Resource.Jquery)}"/>
+  <apex:includeScript value="{!URLFOR($Resource.Jquery, '/Scripts/js/lib/jquery-ui.js')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.Jquery, '/Scripts/css/lib/jquery.ui.css')}" />
+</head>
+<body>
+ 
+<div id="progressbar"></div>
+ 
+<script>
+$( "#progressbar" ).progressbar({
+  value: false
+});
+</script>
+ 
+</body>
+</html>
+
+  
+</apex:page>

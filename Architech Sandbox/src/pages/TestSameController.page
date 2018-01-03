@@ -1,0 +1,10 @@
+<apex:page controller="sameController" docType="HTML">
+ 
+     <apex:form >
+         
+         <apex:inputText value="{!datevalue}"/>
+         <br/>
+         <apex:commandButton value="Call Another Page" action="{!call}"/>
+     </apex:form>
+ 
+</apex:page>
